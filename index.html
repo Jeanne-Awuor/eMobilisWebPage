@@ -1,13 +1,149 @@
+<!DOCTYPE html>
 <html>
-    <head>
-       <title>MY FIRST WEB PAGE</title>
-    </head>
-    <body>
-        <h1>JEANNE VENNEY AWUOR</h1>
-        <h2>AGE:20</h2>
-        <h3>GENDER:FEMALE</h3>
-        <h4>NICKNAME:GIN</h4>
-        <h5>PETS:NYOKABI NYARDUNDO</h5>
-        <h6>YEAR:2024</h6>
-    </body>
+<head>
+<!--    metadata of the page-->
+    <meta charset="UTF-8">
+    <title>eMobilis lesson 2</title>
+<!--    link to the file-->
+    <link href="CSS/style.css" rel="stylesheet">
+<!--    INTERNAL CSS-->
+    <style>
+        /* css code */
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #btnSubmit{
+             background-color: purple;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+        .table {
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+            font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+        }
+        td {
+            padding: 13px;
+            text-align: center;
+            border: 1px solid grey;
+        }
+
+    </style>
+</head>
+<body style="background-color: green;color: white">
+<!--what the user can see-->
+<p style="font-family:'Calibri Light'; font-weight: bold; color:orange">Jeanne is a driven engineering student with a deep passion for networking and technology, currently balancing a full plate of responsibilities. She is expanding her skills in web development through eMobilis training while also preparing for competitive programming and the Huawei DataCom exam. Alongside her technical pursuits, she is exploring topics like cryptography, DevOps, and complex engineering concepts such as motor operations and control systems. Jeanne is highly focused on her career growth and constantly seeks ways to challenge herself, aligning her projects with both academic and career goals. Despite the intense schedule, which includes caregiving responsibilities and house chores, Jeanne approaches every challenge with resilience and determination, eager to excel in her university coursework, competitions, and certifications.</p>
+<!--lists-->
+<!--ordered lists-->
+<ol>
+    <li>CATS</li>
+    <li>dogs</li>
+</ol>
+<!--unordered lists-->
+<ul>
+     <li>CATS</li>
+    <li>dogs</li>
+</ul>
+<!--headers-->
+<h1>Heading 1</h1>
+<h1>Heading 2</h1>
+<!--blockquotes-->
+<blockquote>We are learning on what is HTML(HyperText Markup Language).It is used in coming up with the structure of the page and in conjunction with CSS ,it is also used in layouting.It has elements that are wrapped
+eanne is a driven engineering student with a deep passion for networking and technology, currently balancing a full plate of responsibilities. She is expanding her skills in web development through eMobilis training while also preparing for competitive programming and the Huawei DataCom exam. Alongside her technical pursuits, she is exploring topics like cryptography, DevOps, and complex engineering concepts such as motor operations and control systems. Jeanne is highly focused on her career growth and constantly seeks ways to challenge herself, aligning her projects with both academic and career goals. Despite the intense schedule, which includes caregiving responsibilities and house chores, Jeanne approaches every challenge with resilience and determination, eager to excel in her university coursework, competitions, and certifications.
+</blockquote>
+<!--button-->
+<!--inline css-->
+<button>CLICK ME</button>
+<button id="btnSubmit">SUBMIT ME</button>
+<!--image-->
+<img src="ASSETS/myImage.jpg" height="300" width="600" alt="some image here"/>
+<!--table-->
+<table class="table">
+    <thead>
+    <th>CLASS</th>
+    <th>HOW MUCH I LIKE IT</th>
+    <th>HOW WELL I AM DOING</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>eMobilis</td>
+        <td>8</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>Huawei</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+     <tr>
+        <td>ECT</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+       <td colspan="2">Total Subjects Liking</td>
+        <td>7</td>
+    </tr>
+    </tfoot>
+</table>
+<table>
+    <thead>
+    <th>CLASS</th>
+    <th>HOW MUCH I LIKE IT</th>
+    <th>HOW WELL I AM DOING</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>eMobilis</td>
+        <td>8</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>Huawei</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+     <tr>
+        <td>ECT</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+       <td colspan="2">Total Subjects Liking</td>
+        <td>7</td>
+    </tr>
+    </tfoot>
+</table>
+<!--form-->
+<form method="post">
+    <label>SUBJECT NAME</label>
+    <input type="text" placeholder="Enter subject" name="subject_name"/>
+    <label>SUBJECT RATING</label>
+    <input type="number" placeholder="Enter rating" name="rating"/>
+    <label>LECTURER EMAIL</label>
+    <input type="email" placeholder="Enter lec email" name="lec email"/>
+    <label>Jeanne Picture</label>
+    <input type="file" name="Jeanne_pic">
+    <select name="JeanneFave Color">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+    </select>
+    <input type="submit" value="Submit subject"/>
+    <input type="reset" value="Reset form"/>
+</form>
+
+</body>
 </html>
