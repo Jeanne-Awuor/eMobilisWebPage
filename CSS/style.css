@@ -1,30 +1,64 @@
-form {
-    max-width:400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
+.grid-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'cd cd vd vd vd vd id id'
+    'scd scd af af af af sd sd'
+    'fd fd fd fd fd fd fd fd'
+    ;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: white;
-    padding: 10px;
+#navbarDiv{
+    grid-area: nd;
 }
-input[type="text"],
-input[type="number"],
-input[type="file"],
-input[type="submit"],
-input[type="reset"],
-select{
+#courseDiv{
+    grid-area: cd;
+}
+#videoDiv{
+    grid-area: vd;
+}
+#imageDiv{
+    grid-area: id;
+}
+#sCourseDiv{
+    grid-area: scd;
+}
+#applicationForm{
+    grid-area: af;
+}
+#someDiv{
+    grid-area: sd;
+}
+#footerDiv{
+    grid-area: fd;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
+    height: 100%;
 }
-input[type="submit"]{
-    background-color: aquamarine;
+
+.img-container{
+    width: 315px;
+    height: auto;
 }
-input[type="reset"]{
-    background-color: cornflowerblue;
+
+
+@media screen and (max-width: 600px){
+    .grid-container{
+    display: grid;
+     grid-gap: 15px;
+    grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'cd cd cd cd cd cd cd cd'
+    'vd vd vd vd vd vd vd vd'
+    'id id id id id id id id'
+    'scd scd scd scd scd scd scd scd'
+    'af af af af af af af af'
+    'sd sd sd sd sd sd sd sd'
+    'fd fd fd fd fd fd fd fd'
+    ;
+}
 }
